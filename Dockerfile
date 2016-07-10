@@ -9,5 +9,5 @@ RUN \
   apk --purge -v del py-pip && \
   rm /var/cache/apk/*
 
-ENTRYPOINT [ 'aws' ]
+ENTRYPOINT [ '/usr/bin/aws' ]
 
